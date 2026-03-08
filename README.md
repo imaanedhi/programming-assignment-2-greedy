@@ -9,15 +9,15 @@ Python 3
 
 ## Repository Structure
 
+```text
 src/
 data/
 tests/
 README.md
 
-## How to Run
+How to Run
 
 From the project root folder, run:
-
 python3 src/main.py data/example.in
 
 You can also run the test files:
