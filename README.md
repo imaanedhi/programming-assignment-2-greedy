@@ -49,15 +49,40 @@ FIFO  : <number_of_misses>
 LRU   : <number_of_misses>
 OPTFF : <number_of_misses>
 
+## Assumptions
+
+Input is well-formed
+
+Request IDs are integers
+
+Cache capacity is at least 1
+
+Standard Python 3 libraries only are used
+
+## Example Inputs and Outputs
+
+Example input file:
+
+data/example.in
+
+Example command:
+
+python3 src/main.py data/example.in
+
+Expected output file:
+
+tests/example.out
+
 ## Written Component
 ## Question 1: Empirical Comparison
 
 I tested the program on three input files containing at least 50 requests.
 
-Input File	k	 m	FIFO LRU	OPTFF
-file1.in	  3	 50	 44	  46	 29
-file2.in	  4	 50	 43	  45	 25
-file3.in	  3	 50	 35	  37	 23
+| Input File | k | m  | FIFO | LRU | OPTFF |
+| ---------- | - | -- | ---- | --- | ----- |
+| file1.in   | 3 | 50 | 44   | 46  | 29    |
+| file2.in   | 4 | 50 | 43   | 45  | 25    |
+| file3.in   | 3 | 50 | 35   | 37  | 23    |
 
 Comments
 
